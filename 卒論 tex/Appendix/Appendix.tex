@@ -1,0 +1,33 @@
+\appendix
+\chapter{付録}
+\indent
+付録として，MQTTパブリッシャ側のプログラム（TWELITE CUEタグ）からのデータ取得プログラム(\ref{scpub})，MQTTサブスクライバ側のプログラム(\ref{scsub})のソースコードを記載した．
+実行環境はPython3.10.1である．
+なお，パブリッシャ側のプログラムはモノワイヤレス株式会社のパルスクリプトを改変したものである．\cite{pal}
+
+
+\lstset{
+  basicstyle={\ttfamily\scriptsize},
+  commentstyle = {\itshape\scriptsize},
+  %identifierstyle={\small},
+  %keywordstyle={\small\bfseries},
+  %dkeywordstyle={\small},
+  %stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
+
+
+\lstinputlisting[caption=パブリッシャ側プログラム,label=scpub]{Appendix/mqttpubthesis.py}
+
+\clearpage
+\lstinputlisting[caption=サブスクライバ側のプログラム,label = scsub]{Appendix/mqtt_subtestthesis.py}

@@ -1,0 +1,76 @@
+\documentclass [twoside,epsfig,11pt]{jreport}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[dvipdfmx]{color}
+\usepackage{listings,jlisting}
+\usepackage{url}
+\usepackage{verbatim}
+
+
+\makeatletter
+\def\lst@lettertrue{\let\lst@ifletter\iffalse}
+\makeatother
+
+
+%
+% %から右側のところはコメント
+%
+%***************************************************
+% 提出用書式
+%
+\setlength{\topmargin}{5.0mm}		% 表示位置
+\setlength{\headheight}{10.0mm}
+\setlength{\topskip}{10.0mm}
+\setlength{\oddsidemargin}{15.0mm}
+\setlength{\evensidemargin}{15.0mm}
+\setlength{\textwidth}{145.0mm}
+\setlength{\textheight}{215.0mm}
+\setlength{\footskip}{10.0mm}
+%\setlength{\footheight}{15.0mm}
+\renewcommand{\baselinestretch}{1.2}
+%
+
+\pagestyle{headings}
+
+%***************************************************
+
+\title{\vspace{-1cm} \Huge 卒業論文 \\
+\vspace{1cm}
+\huge 小型無線タグを用いた\\
+子供の行動計測システム\\
+に関する研究 \vspace{3cm}}
+
+\author{
+  \begin{tabular}{c}
+    {\LARGE{東北大学工学部電気情報物理工学科}}\\
+    {\LARGE{張山研究室}}\\ \\
+    {\LARGE{斉藤 涼太}}\\
+  \end{tabular}
+}
+\date{}
+
+
+\begin{document}
+\setcounter{secnumdepth}{7}
+\maketitle
+\large
+%\setcounter{page}{2}
+\tableofcontents
+\include{chapter1/chapter1}
+\include{chapter2/chapter2}
+\include{chapter3/chapter3}
+\include{chapter4/chapter4}
+\include{chapter5/chapter5}
+\include{reference}
+\include{Acknowledgements}
+\include{Appendix/Appendix}
+\end{document}
+
+
+
+
+
+
